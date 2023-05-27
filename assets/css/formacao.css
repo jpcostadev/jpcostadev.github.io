@@ -87,7 +87,7 @@
   display: block;
   width: 108px;
   height: 92px;
-  background-image: url(/projeto-pessoal/assets/img/Decoração.svg);
+  background-image: url(../img/Decoração.svg);
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
@@ -128,7 +128,7 @@
   content: "";
   width: 30px;
   height: 21px;
-  background-image: url(/projeto-pessoal/assets/img/Book.svg);
+  background-image: url(../img/Book.svg);
   position: absolute;
   top: 0.5rem;
   left: -5rem;
@@ -139,7 +139,7 @@
   content: "";
   width: 32px;
   height: 32px;
-  background-image: url(/projeto-pessoal/assets/img/Idiomas.svg);
+  background-image: url(../img/Idiomas.svg);
   position: absolute;
   top: 0rem;
   right: 35rem;
@@ -164,7 +164,7 @@
   display: block;
   width: 13rem;
   height: 10rem;
-  background-image: url(/projeto-pessoal/assets/img/footer-icon.svg);
+  background-image: url(../img/footer-icon.svg);
   position: absolute;
   bottom: -5rem;
   left: 2rem;
@@ -223,7 +223,7 @@
     display: block;
     width: 64px;
     height: 64px;
-    background-image: url(/projeto-pessoal/assets/img/footer-icon.svg);
+    background-image: url(../img/footer-icon.svg);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
@@ -270,7 +270,7 @@
     display: block;
     width: 64px;
     height: 64px;
-    background-image: url(/projeto-pessoal/assets/img/footer-icon.svg);
+    background-image: url(../img/footer-icon.svg);
     background-repeat: no-repeat;
     position: absolute;
     bottom: -5rem;
