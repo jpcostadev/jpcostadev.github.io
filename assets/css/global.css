@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fira Sans", Arial, sans-serif;
+  /* background-color: #1e1e1e; */
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+p {
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 12rem 2rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6rem;
+}
+
+.spacing {
+  height: 7.8rem;
+  background-color: transparent;
+}
+
+/* .home {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+} */
+
+.exp {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  /* aqui define quantas letras vai quebrar a palavra */
+  word-break: break-all;
+  max-width: 5ch;
+}
+
+@media (max-width: 700) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 6rem 2rem;
+    gap: 2rem;
+  }
+}
