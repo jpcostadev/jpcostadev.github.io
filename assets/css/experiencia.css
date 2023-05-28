@@ -4,7 +4,7 @@
 }
 
 .container .subtitulo {
-  color: #2e2e2e;
+  color: #404040;
   max-width: 4ch;
 }
 
@@ -21,7 +21,7 @@
   line-height: 1;
   font-weight: bold;
   color: #fff;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 .empresa-funcao {
   font-size: 2.5rem;
@@ -124,6 +124,16 @@
     padding: 6 2rem;
   }
 
+  .empresa-habilidades li {
+    font-size: 1.2rem;
+    line-height: 1.4;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    background-color: #ccc;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
   .container .subtitulo {
     padding-top: 3rem;
     font-size: 5rem;
@@ -152,10 +162,10 @@
     order: 1;
   }
   .empresa-text {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .empresa-text strong {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -172,7 +182,7 @@
   }
 
   .experiencia-texto {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     max-width: 40ch;
     margin-bottom: 2rem;
   }
