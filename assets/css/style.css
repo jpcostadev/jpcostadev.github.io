@@ -1,0 +1,10 @@
+@import url("./global/reset.css");
+@import url("./global/global.css");
+@import url("./header/header.css");
+@import url("./global/cores.css");
+@import url("./main/intro.css");
+@import url("./cards/cards.css");
+@import url("./global/slide.css");
+@import url("./sobre/sobre.css");
+@import url("./tecnologias/tecnologias.css");
+@import url("./footer/footer.css");

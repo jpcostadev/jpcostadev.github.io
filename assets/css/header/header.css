@@ -1,0 +1,338 @@
+/* Estilo do cabeçalho */
+#header {
+  background-color: var(--gray-1); /* Fundo cinza claro */
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.gridHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 70px;
+}
+
+.bgHeader {
+  width: 100%;
+  display: flex;
+}
+
+/* Estilo do menu principal */
+#menu {
+  display: flex;
+  gap: 2rem; /* Espaço entre itens do menu */
+}
+
+#menu a {
+  padding: 0.5rem; /* Espaçamento interno dos itens do menu */
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+}
+
+/* PSEUDOS DOS LINKS DO MENU */
+.inicio::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--gradient-2);
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+.inicio:hover::before,
+.inicio:focus::before,
+.inicio:active::before {
+  height: 10px;
+}
+
+.sobre::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--gradient-4);
+  margin-right: 5px;
+  transition: 0.2s;
+}
+
+.sobre:hover::before,
+.sobre:focus::before,
+.sobre:active::before {
+  height: 10px;
+}
+
+.tecnologiasM::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--gradient-1);
+  margin-right: 5px;
+  transition: 0.2s;
+}
+.tecnologiasM:hover::before,
+.tecnologiasM:focus::before,
+.tecnologiasM:active::before {
+  height: 10px;
+}
+.contato::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--gradient-3);
+  margin-right: 5px;
+  transition: 0.2s;
+}
+.contato:hover::before,
+.contato:focus::before,
+.contato:active::before {
+  height: 10px;
+}
+
+.portifolioM::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: var(--gradient-5);
+  margin-right: 5px;
+  transition: 0.2s;
+}
+.portifolioM:hover::before,
+.portifolioM:focus::before,
+.portifolioM:active::before {
+  height: 10px;
+}
+
+.inicio:hover,
+.inicio:active,
+.inicio:focus,
+.sobre:hover,
+.sobre:active,
+.sobre:focus,
+.portifolioM:hover,
+.portifolioM:active,
+.portifolioM:focus,
+.tecnologiasM:hover,
+.tecnologiasM:active,
+.tecnologiasM:focus,
+.contato:hover,
+.contato:active,
+.contato:focus {
+  color: var(--gray-5);
+}
+
+/* ----------------------------------------------------- */
+
+/* Estilo do botão de menu móvel (inicialmente oculto) */
+#btnMobile {
+  display: none;
+}
+
+.footerMenu {
+  display: none;
+}
+
+#menu li {
+  position: relative; /* Para posicionar o submenu */
+}
+
+/* Estilos do submenu */
+.dropdownMenu {
+  position: absolute;
+  background: var(--gray-3);
+  box-shadow: 1px 1px 2px #7a7a7a, -1px -1px 2px #ffffff;
+  padding: 1rem;
+  border-radius: 0 0 5px 5px;
+  border-bottom: 2px solid var(--c-2-light);
+  z-index: 200;
+  top: 35px;
+}
+
+[data-dropdown] {
+  position: relative;
+}
+
+.dropdownMenu::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -10px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid var(--gray-5);
+}
+
+.dropdownMenu a::before {
+  content: "";
+  display: inline-block;
+  width: 5px;
+  height: 3px;
+  background: var(--c-2-light);
+  margin-right: 5px;
+  transition: 0.2s;
+}
+.dropdownMenu a:hover:before {
+  background: var(--c-2-dark);
+}
+
+.dropdownMenu li a:hover {
+  color: var(--gray-5);
+}
+
+[data-dropdown] .dropdownMenu {
+  display: none;
+}
+[data-dropdown]:hover .dropdownMenu,
+[data-dropdown].active .dropdownMenu {
+  display: block;
+  animation: show-left 0.3s forwards;
+  transition: 0.3s;
+}
+
+@keyframes show-left {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Estilos para telas menores (max-width: 800px) */
+@media (max-width: 800px) {
+  /* Estilo para o botão de menu móvel visível */
+  #btnMobile {
+    display: flex;
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 1rem; /* Espaço entre os elementos internos do botão */
+    color: var(--gray-7); /* Cor do texto do botão */
+    background-color: var(--gray-4); /* Cor de fundo do botão */
+    border-radius: 5px; /* Borda arredondada */
+    transition: 0.2s; /* Transição suave */
+    border: 2px solid transparent;
+  }
+
+  /* Estilo de foco ao passar o mouse sobre o botão */
+  #btnMobile:hover {
+    background-color: var(--gray-3); /* Cor de fundo ao passar o mouse */
+    border: 2px solid var(--gray-4); /* Borda ao passar o mouse */
+  }
+
+  /* Estilo do ícone de menu (hamburger) */
+  #hamburger {
+    width: 20px;
+    border-top: 2px solid var(--gray-7);
+  }
+  #hamburger::after,
+  #hamburger::before {
+    display: block;
+    content: "";
+    width: 20px;
+    height: 2px;
+    background-color: var(--gray-7);
+    margin-top: 5px;
+    transition: 0.3s; /* Transição suave */
+    position: relative;
+  }
+
+  /* Estilo do ícone de menu quando o menu está ativo */
+  #nav.active #hamburger {
+    border-top-color: transparent; /* Oculta a linha superior */
+  }
+  #nav.active #hamburger::before {
+    transform: rotate(135deg); /* Rotação para formar uma cruz */
+  }
+  #nav.active #hamburger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  /* Estilo do menu quando o menu está ativo */
+  #menu {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 60px; /* Posiciona abaixo do cabeçalho */
+    width: 100%;
+    height: 0; /* Inicialmente oculto */
+    background-color: var(--gray-1); /* Cor de fundo */
+    transition: 0.6s; /* Transição suave */
+    z-index: 1000; /* Empilhamento acima de outros elementos */
+    visibility: hidden; /* Inicialmente invisível */
+    overflow-y: hidden; /* Esconde barras de rolagem */
+  }
+  #nav.active #menu {
+    height: calc(100vh - 60px); /* Altura total da tela menos o cabeçalho */
+    visibility: visible; /* Torna visível */
+    overflow-y: auto; /* Exibe barras de rolagem quando necessário */
+  }
+
+  /* Estilo dos itens do menu */
+  #menu a {
+    padding: 1rem 0; /* Espaçamento interno dos itens do menu */
+    margin: 0 1rem; /* Espaçamento entre itens do menu */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1); /* Linha de separação */
+  }
+  #menu li:first-child {
+    margin-top: 3rem;
+  }
+
+  .footerMenu {
+    display: block;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--gray-4);
+    padding: 1rem 2rem;
+    width: 100%;
+    opacity: 0;
+    transition: 0.6s;
+  }
+
+  .footerMenu p {
+    opacity: 0;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.4rem;
+    transition: 0.6s;
+  }
+
+  #nav.active .footerMenu {
+    opacity: 1;
+  }
+  #nav.active .footerMenu p {
+    opacity: 1;
+  }
+
+  .dropdownMenu {
+    position: relative;
+    display: block;
+    padding: 1rem;
+    border-radius: 0 0 5px 5px;
+    top: -10px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    margin-left: 2rem;
+  }
+  .dropdownMenu:before {
+    display: none;
+  }
+  #menu li:first-child {
+    margin-top: 0.3rem;
+  }
+}

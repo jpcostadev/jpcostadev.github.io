@@ -1,0 +1,51 @@
+:root {
+  --c-1-light: color(display-p3 1 0.65 0);
+  --c-1-dark: color(display-p3 1 0.15 0);
+  --c-2-light: color(display-p3 1 0.9 0);
+  --c-2-dark: color(display-p3 1 0.6 0);
+  --c-3-light: color(display-p3 0.75 0.95 0.1);
+  --c-3-dark: color(display-p3 0.2 0.75 0.15);
+  --c-4-light: color(display-p3 0.065 0.8 0.95);
+  --c-4-dark: color(display-p3 0.065 0.4 0.85);
+  --c-5-light: color(display-p3 0.75 0 1);
+  --c-5-dark: color(display-p3 0.4 0 0.9);
+}
+
+:root {
+  --gray-0: #000;
+  --gray-1: #0e1013;
+  --gray-2: #1b1d20;
+  --gray-3: #222326;
+  --gray-4: #606163;
+  --gray-5: #b0b2b3;
+  --gray-7: #fff;
+  --primary: #aa88ff;
+  --c-1-light: #fa0;
+  --c-1-dark: #f20;
+  --c-2-light: #fd0;
+  --c-2-dark: #f90;
+  --c-3-light: #be2;
+  --c-3-dark: #3b2;
+  --c-4-light: #1ce;
+  --c-4-dark: #16d;
+  --c-5-light: #c1f;
+  --c-5-dark: #70e;
+  --gradient-1: linear-gradient(to right, var(--c-1-light), var(--c-1-dark));
+  --gradientop-1: linear-gradient(to bottom, var(--c-1-light), var(--c-1-dark));
+  --gradient-2: linear-gradient(to right, var(--c-2-light), var(--c-2-dark));
+  --gradientop-2: linear-gradient(to bottom, var(--c-2-light), var(--c-2-dark));
+  --gradient-3: linear-gradient(to right, var(--c-3-light), var(--c-3-dark));
+  --gradientop-3: linear-gradient(to bottom, var(--c-3-light), var(--c-3-dark));
+  --gradient-4: linear-gradient(to right, var(--c-4-light), var(--c-4-dark));
+  --gradientop-4: linear-gradient(to bottom, var(--c-4-light), var(--c-4-dark));
+  --gradient-5: linear-gradient(to right, var(--c-5-light), var(--c-5-dark));
+  --gradientop-5: linear-gradient(to bottom, var(--c-5-light), var(--c-5-dark));
+  --gap-0: 0.75rem;
+  --gap-1: 1.25rem;
+  --gap-2: 2.5rem;
+  --radius: 4px;
+  --font-1: 2rem;
+  --font-2: 1.5rem;
+  --font-3: 1.125rem;
+  --font-4: 1rem;
+}
