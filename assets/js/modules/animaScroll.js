@@ -1,6 +1,5 @@
 const listas = document.querySelectorAll(".tecnologias-info ul li");
 const sobre = document.querySelectorAll(".ul-info li");
-console.log(sobre);
 
 export function animaScroll() {
   function animarScroll() {
@@ -10,7 +9,7 @@ export function animaScroll() {
       if (topLista < 400) {
         lista.classList.add("ativo");
       } else {
-        lista.classList.remove("ativo");
+        // lista.classList.remove("ativo");
       }
     });
   }
